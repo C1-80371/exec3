@@ -28,7 +28,7 @@ pipeline {
         
         stage ('Create service') {
             steps {
-                sh 'kubectl --apply -f rs_svc.yaml'
+                sh 'kubectl apply -f rs_svc.yaml'
             }
         }
     }
